@@ -6,12 +6,16 @@
 #X obj 70 184 i;
 #X obj 121 185 i;
 #X obj 27 182 i;
-#X obj 84 155 + 4;
+#X obj 145 148 + 4;
 #X obj 187 146 + 7;
 #X obj 23 60 * 127;
 #X obj 26 90 t b f b f b f;
+#X obj 198 192 osc~ 440;
+#X obj 197 228 *~;
+#X obj 205 254 dac~;
 #X connect 1 0 3 0;
 #X connect 2 0 9 0;
+#X connect 2 0 12 1;
 #X connect 3 0 6 1;
 #X connect 3 0 7 0;
 #X connect 3 0 8 0;
@@ -27,3 +31,6 @@
 #X connect 10 3 0 1;
 #X connect 10 4 5 0;
 #X connect 10 5 0 1;
+#X connect 11 0 12 0;
+#X connect 12 0 13 0;
+#X connect 12 0 13 1;
